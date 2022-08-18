@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+/* ------Navbar------- */
+header{
+  position: sticky;
+  top: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color:#004773;
+  padding: 0px 50px 0px 0px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+.logo {
+  font-size: 30px;
+  font-weight: 800;
+}
+.dropmenu {
+  position: relative;
+  /* margin: auto; */
+}
+.dropbtn {
+  border: none;
+  padding:  10px;
+  width: 210px;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
+}
+.dropmenu-contents {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  background-color: #004773;
+  text-align: center;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+.dropmenu:hover .dropmenu-contents {
+  display: block;
+}
+.dropmenu-contents p {
+  margin: 10px;
+  font-size: 18px;
+  transition: 200ms;
+}
+.dropmenu-contents a {
+  text-decoration: none;
+  color: rgb(218, 218, 218);
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  transition: 300ms;
+  border-radius: 8px;
+}
+.dropmenu-contents p a:hover {
+  color:#ffc107 ;
+  padding: 8px;
+  background-color: #015c94;
+}
+.navleft{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.navtext{
+  margin-right: 20px;
+  font-size: 18px;
+  background-color: #ffc107;
+  padding: 3px 8px;
+  border-radius: 8px;
+  color: black;
+  font-weight: 600;
+}
+.icons{
+  font-size: 25px;
+}
+.icon {
+  cursor: pointer;
+  margin: 0px 10px;
+  transition: 200ms;
+  
+}
+.icon:hover {
+  padding: 2px 5px;
+  transform: scale(1.25);
+  background-color:white;
+  border-radius: 20px;
+
+}
+
+/* ---------------HERO------------ */
+#hero {
+  width: 100%;
+  height: 90vh;
+  background-image: url("/images/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-col{
+  height: 90vh;
+
+}
+.herotext{
+  text-transform: uppercase;
+}
+.herotext span{
+  color:#ffc107 ;
+}
+.mission span{
+  color: #ffc107;
+}
+
+/* --------Agency Section-------- */
+.background{
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/images/bg2.jpg);
+  background-attachment: fixed;
+}
+.services-img{
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.agency-col{
+  height: 95vh;
+}
+.agency-col span{
+  color: #ffc107;
+}
+
+/* ---------Store Section---------- */
+.store-col{
+  height: 100vh;
+}
+
+.store-heading span{
+  color: #ffc107;
+}
+.store-img{
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+/* ----------Values Section----------- */
+
+#values{
+  height: 100vh;
+}
+.values-heading span{
+  color: #ffc107;
+}
+
+.card{
+  transition: 200ms;
+}
+.card:hover{
+  transform: translateY(-10px);
+}
+
+/* ---------------Sustainability----------- */
+
+#sustainability{
+  height: 100%;
+}
+.sus span{
+  color: #ffc107;
+}
+.sus-img{
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------Footer-------- */
+
+#footer{
+  height: 200px;
+}
