@@ -12,12 +12,16 @@
 html{
   scroll-behavior: smooth;
 }
+a{
+  text-decoration: none;
+}
 
 /* ------Navbar------- */
 header{
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   z-index: 100000;
   transition: 300ms;
 }
@@ -27,22 +31,15 @@ header.sticky{
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
 }
 .navbar {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   background-color:transparent;
   color: white;
   padding: 10px 50px;
 }
-.logo {
-  font-size: 30px;
-  font-weight: 800;
-  transition: 200ms;
-}
-.logo:hover{
-  color: #ffc107;
-  transform: scale(1.1);
-}
+
+
 .dropmenu {
   position: relative;
   /* margin: auto; */
@@ -56,7 +53,13 @@ header.sticky{
   color: white;
   text-align: center;
   cursor: pointer;
+  color: #ffc107;
 }
+.logo:hover{
+  color: #ffc107;
+  transform: scale(1.1);
+}
+
 .dropmenu-contents {
   display: none;
   z-index: 1;
@@ -95,6 +98,7 @@ header.sticky{
   align-items: center;
   
 }
+
 .navtext{
   margin-right: 20px;
   font-size: 18px;
@@ -126,10 +130,49 @@ header.sticky{
   border-radius: 20px;
 
 }
+@media(max-width:840px){
+  .navleft{
+    display: none;
+  }
+  .logo{
+    font-size: 40px;
+  }
+  .navbar{ 
+    margin-top: 10px;
+    padding: 10px 20px;
+  }
+  .header.sticky{
+    padding: 0;
+  }
+ 
+}
+@media(min-width:840px){
+  .offcanvas{
+    display: none;
+  }
+  .offcanvas-btn{
+    display: none;
+  }
+}
+@media(max-width:450px){
+  .logo{
+    font-size:25px;
+    text-align: start;
+   
+  }
+  .navbar{
+    padding: 5px 20px;
+    margin-top:5px;
+  }
+  .navleft-1 .icons{
+    font-size: 18px;
+    text-align: center;
+  }
+}
 
 /* ---------------HERO------------ */
 #hero {
-  width: 100%;
+  
   position: relative;
   height: 100vh;
   background-image: url("/images/bg1.jpg");
@@ -150,6 +193,30 @@ header.sticky{
   color:#ffc107 ;
   font-family: 'Acme', sans-serif
 }
+.hero-button{
+  
+  background-color: #ffc107;
+  width: 250px;
+  padding: 5px;
+  font-size: 22px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: 2px solid #ffc107;
+  margin: 20px 10px;
+  transition: 200ms;
+ 
+}
+.hero-button:hover{
+transform: translateY(-5px);
+background-color: transparent;
+}
+.hero-button a{
+  color: black ;
+  padding: 10px;
+}
+.hero-button a:hover{
+  color: #ffc107;
+}
 .mission{
   font-family: 'Acme', sans-serif;
 }
@@ -159,10 +226,19 @@ header.sticky{
 .mission span{
   color: #ffc107;
 }
+@media(max-width:450px){
+  .hero-button{
+    font-size: 12px;
+    width: 135px;
+  }
+  #hero{
+    height: 80vh;
+  }
+}
 
 /* --------Agency Section-------- */
-.body-cont{
-  min-height: 100vh;
+#agency{
+  min-height: 100%;
   background-image: url(/images/bg7.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -170,9 +246,7 @@ header.sticky{
 }
 
 
-.services-img{
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-}
+
 .agency-heading{
   font-family: 'Acme', sans-serif
 }
@@ -184,7 +258,13 @@ header.sticky{
 }
 
 /* ---------Store Section---------- */
-
+#store{
+  background-image:url(/images/bg8.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+}
 .store-heading{
   font-family: 'Acme', sans-serif
 }
@@ -193,8 +273,15 @@ header.sticky{
   color: #ffc107;
   font-family: 'Acme', sans-serif
 }
-.store-img{
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+
+.store-video{
+  width: 700px;
+}
+@media(max-width:500px){
+  .store-video{
+    width: 350px;
+  }
 }
 /* ----------Values Section----------- */
 
@@ -223,7 +310,7 @@ header.sticky{
 
 #sustainability{
   height: 100%;
-  background-image: url(/images/bg3.jpg);
+  background-image: url(/images/bg-sus.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -233,6 +320,38 @@ header.sticky{
 }
 .sus-img{
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.sus-video{
+  width: 1120px;
+  height: 630px;
+}
+
+.partner-card{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+@media(max-width:830px){
+.partner-card{
+  width: 100px;
+  height: 100px;
+}
+.sus-video{
+  width: 560px;
+  height: 315px;
+}
+}
+@media(max-width:450px){
+  .partner-card{
+    width:60px;
+    height: 60px;
+  }
+  .footer-icon{
+    font-size: 10px;
+  }.footer-text{
+    font-size: 15px;
+  }
+
 }
 
 /* ---------Footer-------- */
