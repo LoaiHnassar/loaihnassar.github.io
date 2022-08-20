@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Spectral:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
 
 * {
   margin: 0;
@@ -13,33 +15,47 @@ html{
 
 /* ------Navbar------- */
 header{
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  z-index: 100000;
+  transition: 300ms;
+}
+header.sticky{
+  background-color: #004773;
+  padding: 5px 0px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
 }
 .navbar {
+  width: 100vw;
   display: flex;
   justify-content: space-between;
-  background-color:#004773;
-  padding: 0px 50px 0px 0px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background-color:transparent;
   color: white;
+  padding: 10px 50px;
 }
 .logo {
   font-size: 30px;
   font-weight: 800;
+  transition: 200ms;
+}
+.logo:hover{
+  color: #ffc107;
+  transform: scale(1.1);
 }
 .dropmenu {
   position: relative;
   /* margin: auto; */
 }
-.dropbtn {
+.logo {
   border: none;
-  padding:  10px;
   width: 210px;
   background-color: transparent;
   font-weight: 600;
   font-size: 24px;
   color: white;
+  text-align: center;
+  cursor: pointer;
 }
 .dropmenu-contents {
   display: none;
@@ -47,6 +63,7 @@ header{
   position: absolute;
   background-color: #004773;
   text-align: center;
+  padding: 10px 5px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   width: 100%;
 }
@@ -86,6 +103,12 @@ header{
   border-radius: 8px;
   color: black;
   font-weight: 600;
+  transition: 200ms;
+
+}
+.navtext:hover{
+  background-color: white;
+  color: #015c94;
 }
 .icons{
   font-size: 25px;
@@ -107,10 +130,13 @@ header{
 /* ---------------HERO------------ */
 #hero {
   width: 100%;
-  height: 90vh;
+  position: relative;
+  height: 100vh;
   background-image: url("/images/bg1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+ 
+
 }
 .hero-col{
   height: 90vh;
@@ -118,41 +144,54 @@ header{
 }
 .herotext{
   text-transform: uppercase;
+  font-family: 'Acme', sans-serif;
 }
 .herotext span{
   color:#ffc107 ;
+  font-family: 'Acme', sans-serif
+}
+.mission{
+  font-family: 'Acme', sans-serif;
+}
+.mission-text{
+  
 }
 .mission span{
   color: #ffc107;
 }
 
 /* --------Agency Section-------- */
-.background{
-  width: 100%;
-  height: 100%;
+.body-cont{
+  min-height: 100vh;
+  background-image: url(/images/bg7.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(/images/bg2.jpg);
   background-attachment: fixed;
 }
+
+
 .services-img{
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
-
-.agency-col{
-  height: 95vh;
+.agency-heading{
+  font-family: 'Acme', sans-serif
 }
+
+
 .agency-col span{
   color: #ffc107;
+  font-family: 'Acme', sans-serif
 }
 
 /* ---------Store Section---------- */
-.store-col{
-  height: 100vh;
+
+.store-heading{
+  font-family: 'Acme', sans-serif
 }
 
 .store-heading span{
   color: #ffc107;
+  font-family: 'Acme', sans-serif
 }
 .store-img{
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -160,10 +199,17 @@ header{
 /* ----------Values Section----------- */
 
 #values{
-  height: 100vh;
+  height: 100%;
+  background-image: url(/images/bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.values-heading{
+  font-family: 'Acme', sans-serif
 }
 .values-heading span{
   color: #ffc107;
+  font-family: 'Acme', sans-serif
 }
 
 .card{
@@ -177,6 +223,10 @@ header{
 
 #sustainability{
   height: 100%;
+  background-image: url(/images/bg3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .sus span{
   color: #ffc107;
@@ -187,6 +237,6 @@ header{
 
 /* ---------Footer-------- */
 
-#footer{
-  height: 200px;
+.footer-text{
+  color: #ffc107;
 }

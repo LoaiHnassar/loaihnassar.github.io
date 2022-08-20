@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/7c6b92fc3b.js" crossorigin="anonymous"></script>
@@ -13,17 +14,15 @@
 
 <body>
   <!-- ------------------Header-------------- -->
+
   <header>
 
     <div class="navbar">
       <div class="dropmenu">
-        <button class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+        <div class="logo">NABAHA</div>
         <div class="dropmenu-contents">
           <p class="link"><a href="#agency">Nabaha agency</a></p>
           <p class="link"><a href="#store">nabaha Store</a></p>
-          <p class="link"><a href="#values">our Values</a></p>
-          <p class="link"><a href="#sustainability">sustainability</a></p>
-          <p class="link"><a href="#footer">partners</a></p>
         </div>
 
       </div>
@@ -32,8 +31,11 @@
         <div class="icons">
           <i style="color:#FF0000" class="fa-brands icon fa-youtube"></i>
           <i style="color:#1DA1F2 ;" class="fa-brands icon fa-twitter"></i>
-          <i style="color:#f4c20d;" class="fa-brands icon fa-google"></i>
           <i style="color: #4c8bf5;" class="fa-brands icon fa-facebook"></i>
+          <i style="color: #25D366;" class="fa-brands icon fa-whatsapp"></i>
+          <i style="color: #0f82f4;" class="fa-brands icon fa-linkedin-in"></i>
+          <i style="color: #F56040;" class="fa-brands icon fa-instagram"></i>
+          <i style="color: #ff0050;" class="fa-brands icon fa-tiktok"></i>
         </div>
       </div>
     </div>
@@ -44,187 +46,281 @@
 
     <section id="hero">
       <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-8 d-flex flex-column justify-content-center text-center hero-col">
-            <p class="herotext display-5  text-white fw-semibold">
+        <div class="row"  data-aos="fade-up">
+          <div class="col-12 d-flex flex-column justify-content-center text-center hero-col">
+            <p class="herotext display-4  text-white fw-semibold">
               Nabaha means <span>intelligence</span>
             </p>
             <div>
-              <button class="btn text-dark bg-warning fw-bold mt-4 me-4">Nabaha Agency</button>
-              <button class="btn text-dark bg-warning fw-bold mt-4 ms-4">Nabaha Store</button>
+              <button class="btn p-2 fs-4 text-dark bg-warning fw-bold my-3 me-4">Nabaha Agency</button>
+              <button class="btn p-2 fs-4 text-dark bg-warning fw-bold my-3 ms-4">Nabaha Store</button>
             </div>
-            <p class="mission text-stat text-white display-5 fw-semibold mt-5">Our <span>Mission</span></p>
-            <p class="missiontext text-white h5 fw-lighter  text-sart">Nabaha exists to provide the best innovative
+            <p class="mission text-stat text-white display-4 fw-semibold mt-5">Our <span>Mission</span></p>
+            <p class="mission-text mt-3 fs-3 text-white h5 fw-lighter  text-sart">Nabaha exists to provide the best
+              innovative
               products and services worldwide to every person and every organization.</p>
           </div>
         </div>
       </div>
     </section>
 
+
     <!-- ----------------Agency Section------------- -->
-    <div class="background">
-      <section id="agency" class="d-flex flex-column justify-content-center">
-        <div class="container">
-          <div class="row ">
-            <div class="col-12 col-lg-6 me-5 agency-col d-flex flex-column justify-content-center">
-              <p class="agency-heading fw-semibold text-white mt-5 pt-3 text-uppercase display-6">Our
-                <span>Services</span>
-              </p>
-              <img class="img-fluid rounded-3 services-img" src="/images/services.jpg" alt="" srcset="">
-            </div>
+    <div class="container-fluid body-cont">
+      
+       
 
-            <div class="col-12 col-lg-5 ms-3 agency-col d-flex flex-column justify-content-center agency">
-              <p class="agency-heading text-center fw-semibold text-white text-uppercase display-6">Nabaha
-                <span>Agency</span>
-              </p>
-              <p class="agency-text text-sart fs-5 fw-lighter text-center text-white mt-3">Lorem ipsum dolor sit amet,
-                consectetur adipisicing
-                elit. Minima, blanditiis? Dolorum voluptas veniam provident earum sequi iure? Similique, a! Vel odio
-                ipsum
-                nobis tempore pariatur sequi voluptate, ullam eius. Iste facere omnis libero illo autem provident.
-                Repellat porro quia tempora iure, voluptatibus blanditiis obcaecati dicta, odit recusandae doloribus
-                earum
-                repudiandae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
-                <button class="btn bg-warning fw-bold mt-4">Learn More..</button>
-              </p>
 
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <!-- -----------------Store------------ -->
-      <section id="store">
-        <div class="container values-cont">
-          <div class="row">
-            <div class="col-12 col-lg-6 me-5 d-flex flex-column justify-content-center store-col">
-              <img class="img-fluid rounded-3 store-img" src="/images/store1.jpg" alt="store">
-            </div>
-            <div class="col-12 ms-3 col-lg-5 store-col d-flex flex-column justify-content-center">
-              <p class="store-text text-center fw-semibold text-white text-uppercase display-6 store-heading">Nabaha
-                <span>store</span>
-              </p>
-              <p class="store-text text-sart fs-5 fw-lighter text-center text-white mt-3 ">Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Necessitatibus sapiente est incidunt fuga in neque possimus cupiditate
-                itaque. Numquam laudantium, ipsa architecto nemo quae porro vitae delectus autem iure reprehenderit
-                praesentium deserunt, perspiciatis itaque officiis magnam, deleniti libero iste ipsum culpa repellendus
-                esse sint. Ipsum error excepturi quaerat? Voluptatem sequi incidunt ratione. <br>
-                <button class="btn bg-warning fw-bold mt-4">Lets Shop..</button>
-
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ---------Values----------- -->
-      <section id="values" class="d-flex flex-column justify-content-center">
-        <p class="values-heading text-white text-center text-uppercase fw-semibold display-6">Our
-          <span>Values</span>
-        </p>
-        <p class="values-text text-center text-white fs-4 mt-5 fw-lighter">Who we choose to work with, employee and
-          partner with are determined by our core beliefs</p>
-        <div class="container-fluid">
-          <div class="row mt-5">
-            <div class="col-12 col-lg-3 col-md-6 mt-5">
-              <div class="card py-5 text-center bg-info" style="width: 18rem; height: 200px; ">
-                <div class="card-body">
-                  <h5 class="card-title fs-4 fw-bold">Problem Solving</h5>
-
+        <section id="agency" class="d-flex flex-column justify-content-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-6   agency-col d-flex flex-column justify-content-center "  data-aos="fade-right">
+                <p class="agency-heading fw-semibold text-center text-white mt-5 text-uppercase display-6">Our
+                  <span>Services</span>
+                </p>
+                <div class="row">
+                  <div class="col-12 col-md-6 my-3 mt-5">
+                    <div class="card bg-info border border-3 border-warning text-center" style="width:18rem ;">
+                      <img class="card-img-top" src="/images/Webdev.gif" alt="">
+                      <div class="card-body">
+                        <h5 class="card-title fs-4 fw-bold">Web Development</h5>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-12 col-md-6 mb-3 mt-5">
+                    <div class="card bg-info border border-3 border-warning text-center" style="width:18rem ;">
+                      <img class="card-img-top" src="/images/auto.gif" alt="">
+                      <div class="card-body">
+                        <h5 class="card-title fs-4 fw-bold">Automation</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 mt-3">
+                    <div class="card bg-info border border-3 border-warning text-center" style="width:18rem ;">
+                      <img class="card-img-top" src="/images/mobdev.gif" alt="">
+                      <div class="card-body">
+                        <h5 class="card-title fs-4 fw-bold">Mobile Development</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 mt-3">
+                    <div class="card bg-info border border-3 border-warning text-center" style="width:18rem ;">
+                      <img class="card-img-top" src="/images/network.jpg" alt="">
+                      <div class="card-body">
+                        <h5 class="card-title mt-3 fs-4 fw-bold">Network <br> Design</h5>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-12 col-lg-3 col-md-6 mt-5 ">
-              <div class="card py-5 text-center bg-info" style="width: 18rem; height: 200px;">
-                <div class="card-body">
-                  <h5 class="card-title fs-4 fw-bold">Strategy Before Implementation</h5>
 
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-3 col-md-6 mt-5 ">
-              <div class="card py-5 text-center bg-info" style="width: 18rem; height: 200px;">
-                <div class="card-body">
-                  <h5 class="card-title fs-4 fw-bold">Communication & Collaboration</h5>
+              <div class="col-12 col-lg-5 ms-5 agency-col d-flex flex-column justify-content-center agency"  data-aos="fade-left">
+                <p class="agency-heading text-center fw-semibold mt-2 text-white text-uppercase display-6">Nabaha
+                  <span>Agency</span>
+                </p>
+                <p class="agency-text text-sart fs-4 fw-lighter text-center text-white mt-3">Lorem ipsum dolor sit
+                  amet,
+                  consectetur adipisicing
+                  elit. Minima, blanditiis? Dolorum voluptas veniam provident earum sequi iure? Similique, a! Vel odio
+                  ipsum
+                  nobis tempore pariatur sequi voluptate, ullam eius. Iste facere omnis libero illo autem provident.
+                  Repellat porro quia tempora iure, voluptatibus blanditiis obcaecati dicta, odit recusandae doloribus
+                  earum
+                  repudiandae. Lorem ipsum dolor s Nemo vitae repellendus optio distinctio consequatur non saepe blanditiis? Vitae placeat dolore nihil ea quam in. Consectetur..it, amet consectetur adipisicing elit Lorem ipsum dolor sit. <br>
+                  <button class="btn bg-warning fs-5 fw-bold mt-4">Learn More..</button>
+                </p>
 
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-3 col-md-6 mt-5 ">
-              <div class="card py-5 text-center bg-info" style="width: 18rem; height: 200px;">
-                <div class="card-body">
-                  <h5 class="card-title fs-4 fw-bold">Environment</h5>
-
-                </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-      </section>
+        <!-- -----------------Store------------ -->
+        <section id="store"  data-aos="fade-up">
+          <div class="container mt-5">
+            <div class="row d-flex justify-content-center">
+              <div class="col-12 ms-3 my-5 store-col d-flex flex-column justify-content-center">
+                <p class="store-text text-center mt-5 fw-semibold text-white text-uppercase display-4 store-heading">
+                  Nabaha
+                  <span>store</span>
+                </p>
+                <p class="store-text text-sart fs-4 fw-lighter text-center text-white mt-3 ">Lorem ipsum dolor sit
+                  amet
+                  consectetur adipisicing elit. Necessitatibus sapiente est incidunt fuga in neque possimus cupiditate
+                  itaque. Numquam laudantium, ipsa architecto nemo quae porro vitae delectus autem iure reprehenderit
+                  praesentium deserunt, perspiciatis itaque officiis magnam, deleniti libero iste ipsum culpa
+                  repellendus
+                  esse sint. Ipsum error excepturi quaerat? Voluptatem sequi incidunt ratione. <br>
+                  <button class="btn bg-warning fs-5 fw-bold mt-4">Lets Shop..</button>
 
-      <!-- --------------------Sustainabilty----------- -->
-
-      <section id="sustainability" class="d-flex flex-column justify-content-center">
-        <div class="container">
-          <p class="sus text-center text-white text-uppercase display-5 fw-semibold">Sustainability</p>
-          <div class="row">
-            <div class="col-12 d-flex justify-content-center mt-5"><img class="img-fluid rounded-2 sus-img" style="width: 500px;"
-                src="/images/sustaina.jpg" alt="" srcset=""></div>
-          </div>
-        </div>
-        <p class="sus text-center text-white text-uppercase display-5 mt-5 fw-semibold">Our <span>partners</span></p>
-        <div class="container">
-          <div class="row d-flex justify-content-center mt-4">
-            <div class="col-1 mx-3">
-              <div class="card" style="width:100px ; border-radius:50px; ">
-                <div class="card-body">
-                  <div class="card-title">Partner 1</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-1 mx-3">
-              <div class="card" style="width:100px ; border-radius:50px; ">
-                <div class="card-body">
-                  <div class="card-title">Partner 2</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-1 mx-3">
-              <div class="card" style="width:100px ; border-radius:50px; ">
-                <div class="card-body">
-                  <div class="card-title">Partner 3</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-1 mx-3">
-              <div class="card" style="width:100px ; border-radius:50px; ">
-                <div class="card-body">
-                  <div class="card-title">Partner 4</div>
-                </div>
+                </p>
               </div>
             </div>
           </div>
+        </section>
+
+      
+    </div>
+
+
+    <!-- ---------Values----------- -->
+    <section id="values" class="d-flex flex-column justify-content-center" >
+      <p  data-aos="fade-up" class="values-heading text-white text-center text-uppercase fw-semibold mt-5 display-6">Our
+        <span>Values</span>
+      </p>
+      <p  data-aos="fade-up" class="values-text text-center text-white fs-4 mt-5 fw-lighter">Who we choose to work with, employee and
+        partner with are determined by our core beliefs</p>
+      <div class="container mb-5"  data-aos="zoom-in">
+        <div class="row my-5">
+          <div class="col-12 col-lg-4 col-md-6 d-flex justify-content-center mt-5" data-aos="zoom-in">
+            <div class="card  text-center bg-info" style="width: 18rem; ">
+              <img src="/images/problemsolving.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fs-4 fw-bold">Problem Solving</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-md-6 mt-5 d-flex justify-content-center " data-aos="zoom-in">
+            <div class="card  text-center bg-info" style="width: 18rem;">
+              <img src="/images/strategy.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fs-4 fw-bold">Strategy Before Implementation</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-md-6 mt-5 d-flex justify-content-center" data-aos="zoom-in">
+            <div class="card  text-center bg-info" style="width: 18rem;">
+              <img src="/images/communication.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fs-4 fw-bold">Communication & Collaboration</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-md-6 mt-5 d-flex justify-content-center " data-aos="zoom-in">
+            <div class="card  text-center bg-info" style="width: 18rem;">
+              <img src="/images/innovation.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fs-4 fw-bold">Innovation</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4 col-md-6 mt-5 d-flex justify-content-center " data-aos="zoom-in">
+            <div class="card  text-center bg-info" style="width: 18rem;">
+              <img src="/images/environment.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fs-4 fw-bold">Environment</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+
+              </div>
+            </div>
+          </div>
+
         </div>
+      </div>
+
+    </section>
+
+    <!-- --------------------Sustainabilty----------- -->
+
+    <section id="sustainability" class="d-flex flex-column justify-content-center">
+      <div class="container mt-5">
+        <p  data-aos="fade-up" class="sus text-center text-warning mt-5 text-uppercase display-4 fw-semibold">Sustainability</p>
+        <div class="row">
+          <div  data-aos="zoom-in" class="col-12 d-flex justify-content-center mt-5 display-4"><iframe width="1120" height="630"
+              src="https://www.youtube.com/embed/_5r4loXPyx8" title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe></div>
+        </div>
+      </div>
+      <p class="sus text-center text-white text-uppercase display-5 mt-5 fw-semibold" data-aos="fade-right">Our <span>partners</span></p>
+      <div class="container my-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-1 mx-3" data-aos="fade-right">
+            <div class="card" style="width:100px ; border-radius:50px; ">
+              <div class="card-body">
+                <div class="card-title">Partner 1</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1 mx-3" data-aos="fade-right">
+            <div class="card" style="width:100px ; border-radius:50px; ">
+              <div class="card-body">
+                <div class="card-title">Partner 2</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1 mx-3" data-aos="fade-right">
+            <div class="card" style="width:100px ; border-radius:50px; ">
+              <div class="card-body">
+                <div class="card-title">Partner 3</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1 mx-3" data-aos="fade-right">
+            <div class="card" style="width:100px ; border-radius:50px; ">
+              <div class="card-body">
+                <div class="card-title">Partner 4</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
     
-    </section>
 
     <!-- -----------Footer----------- -->
-    <section id="footer">
-      <div class="container">
-        <p class="footer mt-5 pt-5 text-white text-center display-5 fw-semibold">Footer</p>
+    
+      <div class="container-fluid bg-dark">
+        <div class="icons text-center p-3" >
+          <i style="color:#FF0000" class="fa-brands icon fa-2x p-1 fa-youtube"></i>
+          <i style="color:#1DA1F2 ;" class="fa-brands icon fa-2x p-1 fa-twitter"></i>
+          <i style="color: #4c8bf5;" class="fa-brands icon fa-2x p-1 fa-facebook"></i>
+          <i style="color: #25D366;" class="fa-brands icon fa-2x p-1 fa-whatsapp"></i>
+          <i style="color: #0f82f4;" class="fa-brands icon fa-2x p-1 fa-linkedin-in"></i>
+          <i style="color: #F56040;" class="fa-brands icon fa-2x p-1 fa-instagram"></i>
+          <i style="color: #ff0050;" class="fa-brands icon fa-2x p-1 fa-tiktok"></i>
+        </div>
+        
       </div>
+      <div class="footer-text text-white text-center fs-4 py-3">Copyright © Nabaha Company, LLC. All Rights Reserved</div>
     </section>
 
 
 
 
-    </div>
+
+
   </main>
+  <script src="/js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 200,
+      duration: 800,
+    });
+  </script
 </body>
 
 </html>
