@@ -214,8 +214,9 @@ background-color: transparent;
 .hero-button a:hover{
   color:blue;
 }
-.mission{
+.mission span{
   font-family: 'Acme', sans-serif;
+  color: blue;
 }
 
 @media(max-width:450px){
