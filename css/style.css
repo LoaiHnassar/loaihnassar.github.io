@@ -26,7 +26,7 @@ header{
   transition: 300ms;
 }
 header.sticky{
-  background-color: #004773;
+  background-color: whitesmoke;
   padding: 5px 0px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
 }
@@ -47,16 +47,16 @@ header.sticky{
 .logo {
   border: none;
   width: 210px;
-  background-color: transparent;
+  background-color:transparent;
   font-weight: 600;
   font-size: 24px;
-  color: white;
+  color: blue;
   text-align: center;
   cursor: pointer;
-  color: #ffc107;
+  
 }
 .logo:hover{
-  color: #ffc107;
+  color:black;
   transform: scale(1.1);
 }
 
@@ -64,7 +64,7 @@ header.sticky{
   display: none;
   z-index: 1;
   position: absolute;
-  background-color: #004773;
+  background-color:whitesmoke;
   text-align: center;
   padding: 10px 5px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -80,7 +80,7 @@ header.sticky{
 }
 .dropmenu-contents a {
   text-decoration: none;
-  color: rgb(218, 218, 218);
+  color: black;
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
@@ -88,9 +88,9 @@ header.sticky{
   border-radius: 8px;
 }
 .dropmenu-contents p a:hover {
-  color:#ffc107 ;
+  color:white ;
   padding: 8px;
-  background-color: #015c94;
+  background-color: blue;
 }
 .navleft{
   display: flex;
@@ -102,17 +102,17 @@ header.sticky{
 .navtext{
   margin-right: 20px;
   font-size: 18px;
-  background-color: #ffc107;
+  background-color:blue;
   padding: 3px 8px;
   border-radius: 8px;
-  color: black;
+  color: white;
   font-weight: 600;
   transition: 200ms;
 
 }
 .navtext:hover{
-  background-color: white;
-  color: #015c94;
+  background-color: whitesmoke;
+  color: black;
 }
 .icons{
   font-size: 25px;
@@ -121,12 +121,12 @@ header.sticky{
   cursor: pointer;
   margin: 0px 10px;
   transition: 200ms;
+  padding: 7px;
   
 }
 .icon:hover {
-  padding: 2px 5px;
   transform: scale(1.25);
-  background-color:white;
+  background-color:lightgray;
   border-radius: 20px;
 
 }
@@ -172,14 +172,11 @@ header.sticky{
 
 /* ---------------HERO------------ */
 #hero {
-  
   position: relative;
   height: 100vh;
-  background-image: url("/images/bg1.jpg");
+  background-image: url("/bg/bg1.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
- 
-
 }
 .hero-col{
   height: 90vh;
@@ -190,18 +187,18 @@ header.sticky{
   font-family: 'Acme', sans-serif;
 }
 .herotext span{
-  color:#ffc107 ;
+  color:blue;
   font-family: 'Acme', sans-serif
 }
 .hero-button{
   
-  background-color: #ffc107;
+  background-color: blue;
   width: 250px;
   padding: 5px;
   font-size: 22px;
   font-weight: 600;
   border-radius: 10px;
-  border: 2px solid #ffc107;
+  border: 2px solid black;
   margin: 20px 10px;
   transition: 200ms;
  
@@ -211,35 +208,30 @@ transform: translateY(-5px);
 background-color: transparent;
 }
 .hero-button a{
-  color: black ;
+  color: white ;
   padding: 10px;
 }
 .hero-button a:hover{
-  color: #ffc107;
+  color:blue;
 }
 .mission{
   font-family: 'Acme', sans-serif;
 }
-.mission-text{
-  
-}
-.mission span{
-  color: #ffc107;
-}
+
 @media(max-width:450px){
   .hero-button{
     font-size: 12px;
     width: 135px;
   }
   #hero{
-    height: 80vh;
+    height: 90vh;
   }
 }
 
 /* --------Agency Section-------- */
 #agency{
-  min-height: 100%;
-  background-image: url(/images/bg7.jpg);
+  min-height: 100vh;
+  background-image: url(/bg/bg2-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -253,24 +245,31 @@ background-color: transparent;
 
 
 .agency-col span{
-  color: #ffc107;
+  color: blue;
   font-family: 'Acme', sans-serif
+}
+
+
+@media(max-width:450px){
+  .agency-row{
+    flex-direction: column-reverse;
+  }
 }
 
 /* ---------Store Section---------- */
 #store{
-  background-image:url(/images/bg8.jpg);
+  background-image:url(/bg/bg2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100%;
+  min-height: 100vh;
 }
 .store-heading{
   font-family: 'Acme', sans-serif
 }
 
 .store-heading span{
-  color: #ffc107;
+  color:blue;
   font-family: 'Acme', sans-serif
 }
 
@@ -282,20 +281,24 @@ background-color: transparent;
   .store-video{
     width: 350px;
   }
+  .store-row{
+    flex-direction: column-reverse;
+  }
 }
 /* ----------Values Section----------- */
 
 #values{
   height: 100%;
-  background-image: url(/images/bg2.jpg);
+  background-image: url(/bg/bg4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 .values-heading{
   font-family: 'Acme', sans-serif
 }
 .values-heading span{
-  color: #ffc107;
+  color: blue;
   font-family: 'Acme', sans-serif
 }
 
@@ -303,14 +306,14 @@ background-color: transparent;
   transition: 200ms;
 }
 .card:hover{
-  transform: translateY(-10px);
+  transform: translateY(-20px);
 }
 
 /* ---------------Sustainability----------- */
 
 #sustainability{
   height: 100%;
-  background-image: url(/images/bg-sus.jpg);
+  background-image: url(/bg/bg4-01.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
