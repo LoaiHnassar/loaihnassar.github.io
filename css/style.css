@@ -49,7 +49,7 @@ header.sticky{
   width: 210px;
   background-color:transparent;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 24px;
   color: blue;
   text-align: center;
   cursor: pointer;
@@ -174,7 +174,7 @@ header.sticky{
 #hero {
   position: relative;
   height: 100vh;
-  background-image: url("/bg/bg1.jpeg");
+  background-image: url(../bg/bg1.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -214,9 +214,8 @@ background-color: transparent;
 .hero-button a:hover{
   color:blue;
 }
-.mission span{
+.mission{
   font-family: 'Acme', sans-serif;
-  color: blue;
 }
 
 @media(max-width:450px){
@@ -232,7 +231,7 @@ background-color: transparent;
 /* --------Agency Section-------- */
 #agency{
   min-height: 100vh;
-  background-image: url(/bg/bg2-1.jpg);
+  background-image: url(../bg/bg2-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -259,7 +258,7 @@ background-color: transparent;
 
 /* ---------Store Section---------- */
 #store{
-  background-image:url(/bg/bg2.jpg);
+  background-image:url(../bg/bg2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -277,6 +276,7 @@ background-color: transparent;
 
 .store-video{
   width: 700px;
+  border-radius: 20px;
 }
 @media(max-width:500px){
   .store-video{
@@ -290,7 +290,7 @@ background-color: transparent;
 
 #values{
   height: 100%;
-  background-image: url(/bg/bg4.jpg);
+  background-image: url(../bg/bg4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -314,7 +314,7 @@ background-color: transparent;
 
 #sustainability{
   height: 100%;
-  background-image: url(/bg/bg4-01.jpg);
+  background-image: url(../bg/bg4-01.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
