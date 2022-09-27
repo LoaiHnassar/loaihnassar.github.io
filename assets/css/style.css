@@ -126,7 +126,7 @@ section {
   visibility: hidden;
   opacity: 0;
   right: 15px;
-  bottom: 15px;
+  bottom: 60px;
   z-index: 99999;
   background: #4154f1;
   width: 40px;
@@ -147,6 +147,37 @@ section {
 }
 
 .back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* ------------------------------------------------------------
+# WhatsAapp button
+------------------------------------------------------------- */
+.whatsaap{
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+  background: #4154f1;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+.whatsaap i{
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+.whatsaap:hover{
+  background: #6776f4;
+  color: #fff;
+}
+.whatsaap.active{
   visibility: visible;
   opacity: 1;
 }
