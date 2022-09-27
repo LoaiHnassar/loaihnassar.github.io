@@ -156,7 +156,7 @@ section {
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
-    transition-delay: 0 !important;
+    transition-delay: 0s !important;
   }
 }
 
@@ -637,7 +637,7 @@ Header Logo Drop menu
 
 .agency .btn-read-more:hover i {
   transform: translateX(5px);
-} 
+}
 
 /*--------------------------------------------------------------
 # services
