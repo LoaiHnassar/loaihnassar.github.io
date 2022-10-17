@@ -106,6 +106,21 @@
     window.addEventListener('load', toggleBacktotop)
     onscroll(document, toggleBacktotop)
   }
+  /**
+   * WhatsApp Button
+   */
+  let WhatsBtn = select('.whatsaap')
+  if(WhatsBtn){
+    const toggleWhatsBtn = () => {
+      if(window.scrollY>100){
+        WhatsBtn.classList.add('active')
+      } else {
+        WhatsBtn.classList.remove('active')
+      }
+    }
+    window.addEventListener('load', toggleWhatsBtn)
+    onscroll(document, toggleWhatsBtn)
+  }
 
   /**
    * Mobile nav toggle

@@ -150,8 +150,6 @@ section {
   visibility: visible;
   opacity: 1;
 }
-
-
 /* ------------------------------------------------------------
 # WhatsAapp button
 ------------------------------------------------------------- */
@@ -668,7 +666,7 @@ Header Logo Drop menu
 
 .agency .btn-read-more:hover i {
   transform: translateX(5px);
-}
+} 
 
 /*--------------------------------------------------------------
 # services
@@ -992,7 +990,6 @@ Header Logo Drop menu
 
 
 .values .values-icons {
-  margin-top: 120px;
 }
 
 .values .values-icons h3 {
