@@ -19,6 +19,7 @@
 <link rel="canonical" href="https://nabaha.co">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7COswald:400,700%7CDroid+Sans:400,700%7CRoboto:400,700%7CLato:400,700%7CPT+Sans:400,700%7CSource+Sans+Pro:400,600,700%7CNoto+Sans:400,700%7CPT+Sans:400,700%7CUbuntu:400,700%7CBitter:400,700%7CPT+Serif:400,700%7CRokkitt:400,700%7CDroid+Serif:400,700%7CRaleway:400,700%7CInconsolata:400,700" rel="stylesheet" type="text/css">
@@ -66,26 +67,189 @@
 
 
 
+    <!-- ------------Navbar------------- -->
+
+    <header>
+      <nav class="navbar-cs">
+        <div class="logo-cs">
+          <a href="http://www.nabaha.co/"><img
+              src="https://images.clickfunnels.com/cdn-cgi/image/fit=scale-down,width=1100,quality=75/https://images.clickfunnels.com/24/f07b1a09d340d3bfbee3c8bddae303/Logo.png"
+              alt="logo"></a>
+        </div>
+        <ul class="nav-cs-list">
+          <li class="nav-cs-item">
+            <a href="https://agency.nabaha.co/">AGENCY</a>
+          </li>
+          <li class="nav-cs-item">
+            <a href="https://www.amazon.com/">STORE</a>
+          </li>
+        </ul>
+        <div class="nav-cs-menu"><i class="fa-solid fa-bars"></i></div>
+      </nav>
+    </header>
+
+    <!-- --------Navbar-CSS-------- -->
+
+    <style>
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        z-index: 100;
+      }
+
+
+      .navbar-cs {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 3.5rem;
+      }
+
+      .logo-cs {
+        width: 200px;
+      }
+
+      .logo-cs a img {
+        width: 100%
+      }
+
+      .nav-cs-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+        gap: 2rem;
+      }
+
+      .nav-cs-item {
+        list-style: none;
+        position: relative;
+      }
+
+      .nav-cs-item::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        height: 2px;
+        background: linear-gradient(to right, #54c9f2, #3184ed);
+      }
+
+      .nav-cs-item:hover::after {
+        opacity: 1;
+        transition: 200ms linear;
+      }
+
+      .nav-cs-item a {
+        text-decoration: none;
+        font-weight: 500;
+        color: #3C4048;
+      }
+
+      .nav-cs-item a:hover {
+        color: #3184ed;
+        transition: 200ms linear;
+
+      }
+
+      .nav-cs-menu {
+        display: none;
+      }
 
 
 
-  <!--
-    <div class="">
-   <nav class="">
-      <a href="https://www.nabaha.co" class=""> <img alt="" src="assets/logo.png" class=""></a>
-      <label class="" id=""><img src="https://d2oi1rqwb0pj00.cloudfront.net/nd/svg/hamburger.svg" alt="hamburger" style="margin-top: 12px;"></label>
-      <ul class="" id="">
-         <a class="close"></a>
-         <li class="nav-links-list">
-            <a href="" class="" target="_blank" rel="noopener noreferrer">Agency</a>
-         </li>
-         <li class="">
-            <a href="" class="" target="_blank" rel="noopener noreferrer">Store</a>
-         </li>
-      </ul>
-   </nav>
-</div>
--->
+      .nav-cs-menu i {
+        font-size: 2rem;
+      }
+
+      @media (max-width: 550px) {
+
+        header.sticky {
+          background-color: #393838;
+          height: auto;
+          transition: 300ms linear;
+        }
+
+        .navbar-cs {
+          display: block;
+        }
+
+        .nav-cs-menu {
+          display: block;
+          position: absolute;
+          top: 30px;
+          right: 35px;
+        }
+
+        .nav-cs-menu i.active {
+          color: #55caf2;
+        }
+
+        .nav-cs-list {
+          height: 0;
+          overflow: hidden;
+        }
+
+        .nav-cs-list.show {
+          height: auto;
+          padding-left: 0;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          gap: 0;
+
+        }
+
+        .nav-cs-item a.show {
+          color: #fff;
+          display: block;
+          padding-top: .8rem;
+
+        }
+      }
+    </style>
+
+    <!-- --------Navbar-CSS-End------- -->
+
+    <!-- --------Navbar-JS------- -->
+    <script defer>
+      let navLink = document.querySelectorAll(".nav-cs-item a");
+      let menuBtn = document.querySelector('.nav-cs-menu i');
+
+      document.querySelector(".nav-cs-menu").addEventListener('click', () => {
+
+        if (menuBtn.classList.contains('fa-bars')) {
+
+          document.querySelector("header").classList.add('sticky');
+          document.querySelector(".nav-cs-menu i").classList.add('active');
+          document.querySelector(".nav-cs-menu i").classList.replace('fa-bars', 'fa-times');
+          document.querySelector(".nav-cs-list").classList.add('show');
+          navLink.forEach(link => {
+            link.classList.add('show')
+
+          })
+        }
+        else {
+          document.querySelector("header").classList.remove('sticky');
+          document.querySelector(".nav-cs-menu i").classList.remove('active');
+          document.querySelector(".nav-cs-menu i").classList.replace('fa-times', 'fa-bars');
+          document.querySelector(".nav-cs-list").classList.remove('show');
+          link.classList.remove('show')
+
+        }
+
+
+
+      })
+    </script>
+        <!-- --------Navbar-JS-End------- -->
+
+
+    <!-- ------------Navbar-End--------- -->
 
 
 
