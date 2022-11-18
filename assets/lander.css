@@ -14,7 +14,7 @@ header {
 }
 .logo-cs {
     width: 200px;
-
+ text-decoration: none !important;
 }
 .logo-cs a img {
     width: 100%;
